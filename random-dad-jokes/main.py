@@ -1,25 +1,15 @@
-# Base URL: https://projects.flask.cwhq-apps.com/dad-joke-api/
-# Endpoint: /random/jokes
-
-# Example request: https://projects.flask.cwhq-apps.com/dad-joke-api/random/jokes
-
-# Docs: https://github.com/KegenGuyll/DadJokes_API#getting-started
-
-# We're using a locally-hosted version of this API instead of the URL from the docs.
-
-from urllib.request import urlopen
-from json import loads
+from random import choice
 
 
 def get_random_joke():
-    BASE_URL = "https://projects.flask.cwhq-apps.com/dad-joke-api"
-    endpoint = "/random/jokes"
-
-    request_url = f"{BASE_URL}{endpoint}"
-    with urlopen(request_url) as response:
-        joke = loads(response.read())
-
-    return joke
+    jokes = [
+        {"setup": "Why don't eggs tell jokes?", "punchline": "They'd crack each other up."},
+        {"setup": "I'm reading a book on anti-gravity.", "punchline": "It's impossible to put down!"},
+        {"setup": "Did you hear about the mathematician who's afraid of negative numbers?", "punchline": "He'll stop at nothing to avoid them."},
+        {"setup": "Why are bank tellers not allowed to ride bicycles?", "punchline": "They tend to lose their balance."},
+        {"setup": "What do you call a fish wearing a crown?", "punchline": "A king fish."},
+    ]
+    return choice(jokes)
 
 
 def display_joke(joke):

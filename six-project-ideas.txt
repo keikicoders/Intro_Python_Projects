@@ -1,0 +1,79 @@
+Guess The Number
+    - Allows a user to guess a number between 1 and 10 and tells them
+    if they are too high or too low. The user can keep guessing the
+    number until they get it right. At the end, the user is told how
+    many turns it took them to guess the number.
+    - Concepts:
+        - Random numbers
+        - Boolean values
+        - Counter-controlled repetition with `for` loops
+        - Conditional logic
+        - Incrementing a value in a variable
+        - Converting user input to `int`
+
+
+Random Nickname Generator
+    - Allows a user to enter a first and last name and then displays a 
+    full name with the random nickname in the middle.
+    - Concepts:
+        - Modules
+        - Variables
+        - Multiline strings
+        - Comments
+        - Printing
+        - Getting user input
+        - Using `f-strings`
+        - Lists
+        - Getting random values from a list
+
+
+Programming languages quiz App
+    - Allows a user to take a quiz and keeps track of correct/incorrect
+    answers. Displays different messages based on the number of answers
+    the user got correct.
+    - Concepts:
+        - Dictionaries
+        - Looping through dictionaries
+        - Using `len()` to get the length of a sequence
+        - Incrementing a numeric value
+        - Conditional statements
+
+
+Chatbot
+    - Allows a user to interact with a Chatbot, which will respond
+    to certain standard commands and do things like give the user
+    a random fact, perform math, etc.
+    - Concepts:
+        - Conditional statements
+        - Selecting random items from a list
+        - Indefinite looping
+        - Ending a loop with the `break` statement
+        - `str` methods
+        - Lists
+
+Atbash Cipher 
+    - Allows a user to enter a message, and then returns the encrypted 
+    or decrypted version using the Atbash Cipher. 
+    - Concepts:
+        - User-defined functions 
+            - Function parameters, return values
+        - Looping through a sequence with `for` loops
+        - Complex conditional statements
+        - Membership testing with the `in` operator
+        - `str` methods
+        - Indexing `str`
+        - Method chaining
+
+
+Random Dad Jokes
+    - Allows a user to get random Dad jokes consisting of a setup
+    and punchline from a Dad Jokes API.
+    - Concepts:
+        - Requesting data from an API
+        - Parsing JSON data
+        - Dictionaries
+        - User-defined functions
+        - Indefinite loops
+        - Conditional statements
+        - User input
+

@@ -1,0 +1,177 @@
+ **************
+ atbash-cipher
+ **************
+ Start
+   |
+   V
+ Display Welcome Message
+   |
+   V
+ Get User Input --> "Enter text to process"
+   |
+   V
+ Convert Input to Lowercase
+   |
+   V
+ Ask User to Choose Option --> "(1) Encrypt or (2) Decrypt"
+   |
+   V
+ Is Option Encrypt? -[Yes]-> Run Atbash Cipher for Encryption **NOTE WE CAN GIVE THEM THE FUNCTION**
+                   -[No ]-> Is Option Decrypt?
+                                |
+                                |__[Yes]-> Run Atbash Cipher for Decryption
+                                |
+                                |__[No ]-> Display Error Message
+   |
+   V
+ Display Encrypted/Decrypted Text
+   |
+   V
+ End
+
+
+**************
+Python Chatbot
+**************
+ Start
+   |
+   V
+ Display Welcome Message
+   |
+   V
+ Repeat the Following Indefinitely (Loop)
+   |
+   V
+ Get User Input --> "Enter your command"
+   |
+   V
+ If Command == "Tell me your name" (Could be any command)
+   |
+   V
+   Print "Python Chatbot"
+   |
+   V
+ Else If Command == "What is the meaning of life?" (Could be any command)
+   |
+   V
+   Print "Programming!"
+   |
+   V
+ Else If Command Starts With "Calculate" (Could be any command)
+   |
+   V
+   Strip "Calculate" from Command to get Expression
+   |
+   V
+   Evaluate Expression (Using Safe Evaluation Method)
+   |
+   V
+   Print "[Expression] = [Result]"
+   |
+   V
+ Else If Command == "Give me a random fact" (Could be any command)
+   |
+   V
+   Select Random Fact from List
+   |
+   V
+   Print Random Fact
+   |
+   V
+ Else If Command == "Goodbye"
+   |
+   V
+   Print "See ya later!"
+   |
+   V
+   End Chatbot
+   |
+   V
+ Else
+   |
+   V
+   Print "Sorry, I don't know that command!"
+   |
+   |
+   +----------------+
+   |
+   V
+ End (After Exiting Loop)
+
+
+****************
+Guess the number
+****************
+Start
+    |
+    V
+Display Welcome Message
+    |
+    V
+Set "num_guesses" to 0
+    |
+    V
+Generate "random_number" between 1 and 10
+    |
+    V
+Repeat 3 Times:
+    |
+    V
+    Ask User for a Guess --> "What is your guess?"
+    |
+    V
+    Increment "num_guesses" by 1
+    |
+    V
+    If "user_guess" is "random_number"
+        |
+        V
+        Print Success Message with "num_guesses"
+        |
+        V
+        Set "user_won" to True
+        |
+        V
+        End Game
+    |
+    V
+If "user_won" is False
+    |
+    V
+    Print Losing Message with "random_number"
+    |
+    V
+End Game
+
+*****************
+Random Dad Jokes
+*****************
+Start
+    |
+    V
+Display Welcome Message
+    |
+    V
+Display Options
+    |
+    V
+Get User's Choice
+    |
+    V
+If User Chooses Get Dad Joke
+    |
+    V
+    Retrieve Random Joke using get_random_joke()
+    |
+    V
+    Display Joke using display_joke(joke)
+    |
+    V
+    Return to Start
+    |
+    V
+If User Chooses Exit
+    |
+    V
+End Program
+

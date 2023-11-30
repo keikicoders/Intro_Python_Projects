@@ -24,6 +24,7 @@ num_guesses = 0
 random_number = randint(1, 10)
 user_won = False
 
+print(welcome_message)
 for turn in range(3):
     user_guess = int(input("What is your guess? "))
     num_guesses += 1
