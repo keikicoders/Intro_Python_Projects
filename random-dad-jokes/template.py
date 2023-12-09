@@ -1,7 +1,7 @@
 from random import choice
 
 welcome_message = """
-    Welcome to the `Random Dad Joke` app!
+    Welcome to [Fill out your name here] `Random Dad Joke` app!
 
     This app uses a dictionary to fetch random dad jokes and
     setup punchlines. The setup will
@@ -12,11 +12,13 @@ welcome_message = """
 
 def get_random_joke():
     jokes = [
-        {"setup": "Why don't eggs tell jokes?", "punchline": "They'd crack each other up."},
-        {"setup": "I'm reading a book on anti-gravity.", "punchline": "It's impossible to put down!"},
-        {"setup": "Did you hear about the mathematician who's afraid of negative numbers?", "punchline": "He'll stop at nothing to avoid them."},
-        {"setup": "Why are bank tellers not allowed to ride bicycles?", "punchline": "They tend to lose their balance."},
-        {"setup": "What do you call a fish wearing a crown?", "punchline": "A king fish."},
+        {"setup": "Why don't eggs tell jokes?", 
+         "punchline": "They'd crack each other up."},
+        {"setup": "I'm reading a book on anti-gravity.", 
+         "punchline": "It's impossible to put down!"},
+        {}
+        {}
+        {},
     ]
     return choice(jokes)
 
@@ -38,8 +40,14 @@ EXIT = 2
 while True:
     user_choice = int(input(options))
 
-    if user_choice == GET_JOKE:
-        random_joke = get_random_joke()
+    # Fill in the missing code below in the "??"
+
+    # Hint What is the syntax for an if statement?
+    ?? user_choice ?? GET_JOKE:
+        # How do you assign a variable?
+        random_joke ?? get_random_joke()
         display_joke(random_joke)
-    elif user_choice == EXIT:
+    # How do you check if a variable is equal to a value?
+    ?? user_choice ?? EXIT:
         break
+    # BONUS: add error handling here
